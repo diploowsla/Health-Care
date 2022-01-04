@@ -447,68 +447,101 @@ hr {
   transition: 0.5s;
 }
 
-
-
 /*God help us*/
-.sommaire ul li{
+.sommaire ul li {
   list-style: none;
   padding: 10px 12px;
 }
-.sommaire ul li a{
-   text-decoration: none;
-   color: #5f3737;
-   font-size: 18px;
-   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}  
-.contenu{
-   width: 70%;
+.sommaire ul li a {
+  text-decoration: none;
+  color: #5f3737;
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.contenu h2{
-   text-align: center;
+.contenu {
+  width: 70%;
+}
+.contenu h2 {
+  text-align: center;
+}
+.sommaire {
+  flex-basis: 30%;
+  width: 60%;
+  text-align: center;
 
+  background: rgba(231, 177, 156, 0.863);
+  border-radius: 60px;
+  margin-bottom: 10%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
-.sommaire{
-   flex-basis:30% ;
-   width: 60%;
-   text-align: center;
-   
-   background: rgba(231, 177, 156, 0.863);
-   border-radius: 60px;
-   margin-bottom: 10%;
-   padding: 10px 20px;
-   box-sizing: border-box;
-   transition: 0.5s;
+.sommaire:hover {
+  box-shadow: 0 0 20px 0px rgb(184, 183, 183);
 }
-.sommaire:hover{
-   box-shadow: 0 0 20px 0px  rgb(184, 183, 183);
+.para p {
+  color: #000;
 }
-.para p{
-color: #000;
-
+.para {
+  border: 5px solid #000005;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
 }
-.para{
-border: 5px solid #000005;
-border-radius: 10px;
-margin: 20px;
-padding: 20px;
-
+.para b {
+  color: #565896;
 }
-.para b{
-   color: #565896;
-}
-.para ul li{
-   text-align: left;
-   margin-left: 50px;
-   color: #242749;
+.para ul li {
+  text-align: left;
+  margin-left: 50px;
+  color: #242749;
 }
 .para img {
-   width: 50%; /* or any custom size */
-   height: 40%; 
-   object-fit: contain;
-  
+  width: 50%; /* or any custom size */
+  height: 40%;
+  object-fit: contain;
 }
 /*.para img{
 position: absolute;
 width: 200px;
 height: 200px;
+}
+
+
+/*---------------------Cookies-----------------*/
+
+.cookie-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #ffffad;
+  color: #000005;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+
+  transition: 400ms;
+}
+
+.cookie-container.active {
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: #565896;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
 }
